@@ -1477,9 +1477,31 @@
 
 
 #Write a python program which will accept list of numerical value and display only prime number
+# n=int(input("Enter the number:"))
+# if (n<0):
+#     print(f"{n} is invalid")
+# else:
+#     l=[]
+#     for i in range(1,n+1):
+#         y=int(input(f"enter the {i} number:"))
+#         l.append(y)
+#     else:
+#         print(l)
+#         for x in l:
+#                 if(x<=1):
+#                     print(f"the number is invalid {x}")
+#                 else:
+#                     res=True
+#                     for y in range(2,x):
+#                         if (x%y==0):
+#                             res=False
+#                             break
+#                     if(res):
+#                         print(f"the pn is {x}")
 
+                
 
-            
+print("jnana")
 
 
 
