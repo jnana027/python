@@ -1350,3 +1350,90 @@
 #     print(f"{c} is bigger number")
 # else:
 #     print(f"{a},{b},{c} are equal")
+
+
+#check given number is prime or not
+# n=int(input("enter the number:"))
+# p="prime"
+# for i in range(2,n):
+#     if (n%i==0):
+#         p="not prime"
+#         break
+# if p=="prime":
+#     print(f"{n} is prime")
+# else:
+#     print(f"{n} is not prime")
+
+
+#write a python program to generate prime number which is less than or equal to the given number
+# while(True):
+#     n=int(input("Enter the number:"))
+#     if n>=2:
+#         break
+#     else:
+#         print("enter the valid input ")
+# p="prime"
+# for i in range(2,n):
+#     if (n%i==0):
+#         p="not prime"
+#         break
+# if p=="prime":
+#     print(f"{n} is prime")
+# else:
+#     print(f"{n} is not prime")
+
+
+#generate prime number:
+# while(True):
+#     n=int(input("enter the number:"))
+#     if n>=2:
+#         break
+#     else:
+#         print("enter tne valid input")
+# for i in range(2,n):
+#     p="prime"
+#     for j in range(2,i):
+#         if (i%j==0):
+#             p="not prime"
+#             break
+#     if(p=="prime"):
+#         print(i)
+
+
+# while(True):
+#     n=int(input("Enter the number:"))
+#     if(n>=2):
+#         break
+#     else:
+#         print("enter the valid number")
+# p="prime"
+# for i in range(2,n//2+1):
+#     if(n%i==0):
+#         p="not prime"
+#         break
+# if p=="prime":
+#         print(f"{n} is a prime number")
+# else:
+#         print(f"{n} is not a prime number")
+
+
+n=int(input("Enter the number:"))
+n1=2
+while n1<=n:
+    p="prime"
+    for i in range(2,n1):
+        if (n1%i==0):
+            p="not prime"
+            break
+    if p=="prime":
+        print(f"{n1} is a prime number")
+    n1=n1+1
+else:
+    print("invalid number")
+
+
+
+
+
+
+    

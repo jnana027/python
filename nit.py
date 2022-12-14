@@ -1257,6 +1257,37 @@
 #             print(i)
 
 
+# while(True):
+#     n=int(input("enter the number:"))
+#     if n>=2:
+#         break
+#     else:
+#         print("enter tne valid input")
+# for i in range(2,n):
+#     p="prime"
+#     for j in range(2,i):
+#         if (i%j==0):
+#             p="not prime"
+#             break
+#     if(p=="prime"):
+#         print(i)
+
+
+# n=int(input("Enter the number:"))
+# n1=2
+# while n1<=n:
+#     p="prime"
+#     for i in range(2,n1):
+#         if (n1%i==0):
+#             p="not prime"
+#             break
+#     if p=="prime":
+#         print(f"{n1} is a prime number")
+#     n1=n1+1
+# else:
+#     print("invalid number")
+
+
 
 # write a python program which will accept list of values and find them sum and average.
 # l=[10,20,30,40,50,60]
@@ -1501,10 +1532,335 @@
 
                 
 
-print("jnana")
+#Write a python program which will accept the age of the citigen and decide wheather eligible vote or not.
+# while True:
+#     n=int(input("Enter the number from 18 to 100:"))
+#     if(n>=18) and (n<=100):
+#         break
+#     print("invalid again enter valid input:")
+# print("This persion is eligible for voting")
+
+
+#Write a python program which will accept student number,student name and marks in three subjects 'c','c++' and 'python'
+# 1.calculate total marks
+# 2.calculate percentage of marks
+# 3.if grade is equal to fail provided student secured less than 40 in any of the three subjects.
+# 4.if grade is equal to 'Distinction' provided total marks likes with in 300 and 250.
+# 5.if grade is equal to 'first' provided total marks likes with in 200 and 249.
+# 6.if grade is equal to 'second' provided total marks likes with in 150 and 199.
+# 7.if grade is equal to 'third' provided total marks likes with in 120 and 149.
+# 8.Display the total marks report.
+# while True:
+#     sno=int(input("Enter the student Roll number from 100 to 200:"))
+#     if (200>=sno) and (sno>=100):
+#         break
+#     print("Invalid student number please enter valid student number")
+# sname=input("Enter the student name:")
+# while True:
+#     cmark=int(input("Enter the mark C:"))
+#     if (100>=cmark>=0):
+#         break
+#     print("Invalid marks of this subject --try again")
+# while True:
+#     cppmark=int(input("Enter thee mark c++:"))
+#     if (100>=cppmark>=0):
+#         break
+#     print("Invalid marks of this subject --try again")
+# while True:
+#     pymark=int(input("Enter thee mark python:"))
+#     if (100>=pymark>=0):
+#         break
+#     print("Invalid marks of this subject --try again")
+# total=cmark+cppmark+pymark
+# permark=(total/300)*100
+# if(cmark<=40) or (cppmark<=40) or(pymark<=40):
+#     grade="Fail"
+# else:
+#     if(total<=300) and(total>=250):
+#         grade="Distinction"
+#     elif (total<=249) and(total>=200):
+#         grade="First"
+#     elif (total<=199) and(total>=150):
+#         grade="Second"
+#     elif (total<=149) and(total>=120): 
+#         grade="Third" 
+# print("*"*50) 
+# print(f"Student number is {sno}")
+# print(f"Student name is {sname}")
+# print(f"{sname} c marks is {cmark}")
+# print(f"{sname} c++ marks is {cppmark}")
+# print(f"{sname} python marks is {pymark}")
+# print(f"Student grade is {grade}")
+# print("*"*50)  
 
 
 
+# s="mississipi"
+# d={}
+# for ch in s:
+#     if ch not in d:
+#         d[ch]=1
+#     else:
+#         d[ch]=d[ch]+1
+# print(d)
+
+
+
+
+# **************************************************************************************************************************
+#                                                    FUNCTION PROBLEM
+# **************************************************************************************************************************
+# 1.Define a function for performing addition of two number
+# approach-1
+#Input---->Function Call
+#Processing-->Function Body
+#Output-------->Function Call
+# def add(a,b):
+#         c=a+b
+#         return c
+# while True:
+#     a=int(input("enter the first number:"))
+#     b=int(input("enter the second number:"))
+#     if (a>0) and (b>0):
+#         c=add(a,b)
+#         break  
+#     else:
+#         print("invalid value enter again")
+# print(f"{a} + {b} = {c}")
+
+
+# approach-2
+#Input--->Function Body
+#Process-->Function Body
+#Result---->Function Body
+# def add():
+#     while True:
+#         a=int(input("Enter the first name:"))
+#         b=int(input("Enter the second name:"))
+#         if (a>0) and (b>0):
+#             c=a+b
+#             break
+#         else:
+#             print("invalid value enter again")
+#     print(f"{a} + {b} = {c}")
+# add()
+
+
+# approach-3
+#Input------>Function call
+#Process--->Function Body
+#Output----->Function Body
+# def add(a,b):      
+#            c=a+b
+#            print(f"{a} + {b} = {c}")
+# while True:
+#     a=int(input("Enter the first number:"))
+#     b=int(input("Enter the second number:"))
+#     if (a>0) and (b>0):
+#        add(a,b)
+#        break
+#     print("invalid value enter again")
+
+
+# approach-4
+#Input------>Function Body
+#Process--->Function Body
+#Output----->Function Call
+# def add():
+#     while True:
+#         a=int(input("Enter the first number:"))
+#         b=int(input("Enter the second number:"))
+#         if (a>0) and (b>0):
+#             c=a+b
+#             break
+#         else:
+#             print("invalid value enter again")
+#     return a,b,c
+# a,b,c=add()
+# print(f"{a} + {b} = {c}")
+
+
+#Write a python program which will calculate multiplication of two number
+# def mul(a,b):
+#     c=a+b
+#     return c
+
+# while True:
+#    a=int(input("Enter the first number:"))
+#    b=int(input("Enter the second number:"))
+#    if(a>0) and (b>0):
+#        c=mul(a,b)
+#        break
+#    else:
+#         print("invalid value enter again")
+# print(f"{a} * {b} = {c}")
+
+
+# def mul():
+#     while True:
+#         a=int(input("enter the first number:"))
+#         b=int(input("enter the second number:"))
+#         if (a>0) and (b>0):
+#             c=a*b
+#             break
+#         else:
+#             print("invalid enter again")
+
+#     print(f"{a} * {b} = {c}")
+# mul()
+
+
+# def mul(a,b):
+#     c=a*b
+#     print(f"{a} * {b} = {c}")
+
+# while True:
+#     a=int(input("Enter the  first number"))
+#     b=int(input("Enter the  second number"))
+#     if (a>0) and (b>0):
+#         mul(a,b)
+#         break
+#     else:
+#         print(f"invalid again enter value")
+
+
+# def mul():
+#     while True:
+#         a=int(input("Enter the first number:"))
+#         b=int(input("Enter the second number:"))
+#         if (a>0) and (b>0):
+#             c=a*b
+#             break
+#         else:
+#             print("invalid try again value enter")
+#     return a,b,c
+# a,b,c=mul()
+# print(f"{a} * {b} = {c}")
+# res=mul()
+# print(f"{res[0]} * {res[1]} = {res[2]}")
+
+
+#3.write a python program which will calcute simple interest while reading principle amount , time and rate of interest and also calculate 
+#total amount to pay by using function.
+
+# def simpleint():
+#     p=int(input("enter the principle amount:"))
+#     t=int(input("enter the time:"))
+#     r=int(input("enter the rate of interest:"))
+#     sp=(p*t*r)/100
+#     totam=p+sp
+#     print(f" The principal amount is {p}")
+#     print(f" The time is {t}")
+#     print(f" The rate of interest is {r}")
+#     return sp,totam
+# simple_interest,total_amount=simpleint()
+# print(f"the simple interest is {simple_interest}")
+# print(f"the total amount to pay is {total_amount}")
+
+
+
+#write a python program which will calculate area and perimeter of circle by using function
+# def ciarea(r):
+#     area=3.14*r**2
+#     return area
+# while True:
+#     r=int(input("enter the area:"))
+#     if r>0:
+#         area=ciarea(r)
+#         break
+#     else:
+#         print("Enter the valid area again")
+# print(f"the radious is {r}")
+# print(f"The area of circle is {area}")
+
+# def ciarea(r):
+#     perimeter=2*3.14*r
+#     return perimeter
+# while True:
+#     r=int(input("enter the area:"))
+#     if r>0:
+#         perimeter=ciarea(r)
+#         break
+#     else:
+#         print("Enter the valid area again")
+# print(f"the radious is {r}")
+# print(f"The perimeter of circle is {perimeter}")
+
+
+
+# def ciarea(r):
+#     area=3.14*r**2
+#     perimeter=2*3.14*r
+#     return area,perimeter
+# while True:
+#     r=int(input("enter the area:"))
+#     if r>0:
+#         area,perimeter=ciarea(r)
+#         break
+#     else:
+#         print("Enter the valid area again")
+# print(f"the radious is {r}")
+# print(f"The area of circle is {area}")
+# print(f"The perimeter of circle is {perimeter}")
+
+
+
+#write a python program which will calculate area and perimeter of rectangle by using function
+# def rect(l,w):
+#     area=l*w
+#     peri=2*(l+w)
+#     return area,peri
+# while True:
+#     length=int(input("enter the length of rectangle:"))
+#     width=int(input("enter the width of rectangle:"))
+#     if (length>0) and (width>0):
+#         area,perimeter=rect(length,width)
+#         break 
+#     else:
+#         print(f"enter the valid value again")
+# print(f"The length of rectangle is {length}")
+# print(f"The width of rectangle is {width}")
+# print(f"The area of rectangle is {area}")
+# print(f"The perimeter of rectangle is {perimeter}")
+
+
+#write a python program which will calculate factorial of given number
+# def fact(n):
+#     if n==0:
+#         f=1
+#     else:
+#         f=1
+#         for i in range(1,n+1):
+#             f=f*i
+#     return f
+# while True:
+#     n=int(input("Enter the number:"))
+#     if (n>=0):
+#         s=fact(n)
+#         break
+#     else:
+#         print("invalid enter valid number again")
+# print(f"The factorial of {n} is {s}")
+
+
+# def fact(n):
+#     if n==0:
+#         f=1
+#     else:
+#         f=1
+#         for i in range(n,0,-1):
+#             f=f*i
+#     return f
+# while True:
+#     n=int(input("Enter the number:"))
+#     if (n>=0):
+#         s=fact(n)
+#         break
+#     else:
+#         print("invalid enter valid number again")
+# print(f"The factorial of {n} is {s}")
+
+    
 
 
 

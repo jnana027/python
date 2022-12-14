@@ -340,8 +340,8 @@
 # x=p+q
 # print(x)
 
-p=[1,2,3,8,4,5,6]
-q=[0,9]
+# p=[1,2,3,8,4,5,6]
+# q=[0,9]
 # for x in p:
 #     q.append(x)
 # print(q)
@@ -355,7 +355,7 @@ q=[0,9]
 # print(p)
 
 # 5.count()
-print(p.count(2))
+# print(p.count(2))
 
 
 
