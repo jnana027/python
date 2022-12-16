@@ -2029,7 +2029,7 @@
 # sumavg()
 
 
-#11.#10.write a python program which will accept list of names from the keyboard and sort them in both ascending and descending orders.
+#11.write a python program which will accept list of names from the keyboard and sort them in both ascending and descending orders.
 #approach=1
 # def name():
 #     l=[]
@@ -2113,6 +2113,99 @@
 #         break
 #     else:
 #         print("Enter invalid number please enter in between from 1 to 4")
+
+
+#12.write a python program which will gererate Fibonocci Series
+# def Fibonocci(n):
+#     if n==1:
+#         n1=0
+#         print(n1)
+#     elif n==2:
+#         n1=0
+#         n2=1
+#         print(n1)
+#         print(n2)
+#     else:
+#         n1=0
+#         n2=1
+#         print(n1)
+#         print(n2)
+#         for i in range(2,n):
+#             n3=n1+n2
+#             n1=n2
+#             n2=n3
+#             print(n3)
+# while True:
+#     n=int(input("Enter How Many Fibonocci Numbers u want:"))
+#     if n>0:
+#         Fibonocci(n)
+#         break
+#     else:
+#         print("invalid enter valid input again")
+
+
+#positional arguments example
+#13.Program for Demonstrating Possitioan arguments
+# def pos(roll,name,mark):
+#     print(f"\t{roll}\t{name}\t{mark}")
+# print("\tROLL\tName\tMarks")
+# pos(1,'jnana',100)
+# pos(2,'lipu',200)
+# pos(3,'bayani',300)
+# pos(4,'tamana',400)
+# pos(5,'mitu',500)
+
+
+# def pos(roll,name,mark):
+#     print(f"\t{roll}\t{name}\t{mark}")
+# print("\tROLL\tName\tMarks")
+# pos(1,'jnana',100)
+# pos(2,'lipu',200)
+# pos(3,'bayani',300)
+# pos(4,'tamana',400)
+# pos(5,'mitu',500)
+# pos(name='Rubi',roll=6,mark=600)
+
+
+
+# def pos(roll,name,mark,crs='python'):
+#     print(f"\t{roll}\t{name}\t{mark}\t{crs}")
+# print("\tROLL\tName\tMarks\tcrs")
+# pos(1,'jnana',100)
+# pos(2,'lipu',200)
+# pos(3,'bayani',300)
+# pos(4,'tamana',400)
+# pos(5,'mitu',500)
+# pos(name='Rubi',roll=6,mark=600)
+
+
+# def pos(roll,name,mark,crs='python',cnt='india'):
+#     print(f"\t{roll}\t{name}\t{mark}\t{crs}\t{cnt}")
+# print("\tROLL\tName\tMarks\tcrs\tcnt")
+# pos(1,'jnana',100)
+# pos(2,'lipu',200)
+# pos(3,'bayani',300,crs='Medical')
+# pos(4,'tamana',400,cnt='USA')
+# pos(5,'mitu',500)
+# pos(name='Rubi',roll=6,mark=600)
+# pos(cnt='Japan',crs='Doctor',name='Baby',roll=7,mark=700)
+
+
+# def pos(roll,name,mark,crs='python',cnt='india'):
+#     print(f"\t{roll}\t{name}\t{mark}\t{crs}\t{cnt}")
+# def pos1(roll,name,mark,crs='Java',cnt='USA'):
+#     print(f"\t{roll}\t{name}\t{mark}\t{crs}\t{cnt}")
+# def pos3(roll,name,mark,crs='Medical',cnt='Russia'):
+#     print(f"\t{roll}\t{name}\t{mark}\t{crs}\t{cnt}")
+# print("\tROLL\tName\tMarks\tcrs\tcnt")
+# pos(1,'jnana',100)
+# pos(2,'lipu',200)
+# pos3(3,'bayani',300)
+# pos3(4,'tamana',400,cnt='Japan')
+# pos1(5,'mitu',500)
+# pos(name='Rubi',roll=6,mark=600)
+# pos1(cnt='Japan',crs='Doctor',name='Baby',roll=7,mark=700)
+
 
 
 				
