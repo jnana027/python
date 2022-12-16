@@ -1680,7 +1680,7 @@
 # print(f"{a} + {b} = {c}")
 
 
-#Write a python program which will calculate multiplication of two number
+#2.Write a python program which will calculate multiplication of two number
 # def mul(a,b):
 #     c=a+b
 #     return c
@@ -1759,7 +1759,7 @@
 
 
 
-#write a python program which will calculate area and perimeter of circle by using function
+#4.write a python program which will calculate area and perimeter of circle by using function
 # def ciarea(r):
 #     area=3.14*r**2
 #     return area
@@ -1805,7 +1805,7 @@
 
 
 
-#write a python program which will calculate area and perimeter of rectangle by using function
+#5.write a python program which will calculate area and perimeter of rectangle by using function
 # def rect(l,w):
 #     area=l*w
 #     peri=2*(l+w)
@@ -1824,7 +1824,7 @@
 # print(f"The perimeter of rectangle is {perimeter}")
 
 
-#write a python program which will calculate factorial of given number
+#6.write a python program which will calculate factorial of given number
 # def fact(n):
 #     if n==0:
 #         f=1
@@ -1859,6 +1859,281 @@
 #     else:
 #         print("invalid enter valid number again")
 # print(f"The factorial of {n} is {s}")
+
+
+#7.write a python program which will accept any positive numerical value and generate its multiplication table using function.
+# def posmul():
+#     while True:
+#         n=int(input("Enter the number:"))
+#         if n<=0:
+#             print("invalid number again try")
+#         else:
+#             for i in range(1,11):
+#                 print(f"{n} * {i} = {n*i}")
+#             break
+# posmul()
+
+# def posmul(n):
+#     for i in range(1,11):
+#         c=(f"{n} * {i} = {n*i}")
+#         print(c)
+    
+# while True:
+#     n=int(input("Enter the number:"))
+#     if (n>0):
+#         res=posmul(n)
+#         break
+#     else:
+#         print("invalid input try again")
+
+
+#8.write a python program which will check wheather the given number is prime or not by using function
+# def prime():
+#     while True:
+#         p=int(input("enter the number:"))
+#         if p<=1:
+#             print("invalid try again")
+#         else:
+#             q="prime"
+#             for i in range(2,p):
+#                 if (p%i==0):
+#                     q="not prime"
+#                     break
+#             if q=="prime":
+#                     print(f"{p} is a prime number")
+#             else:
+#                 print(f"{p} is not a prime number")
+#             break
+
+# prime()
+
+
+#9.write a python program which will convert an arbitary number into Roman number by using function
+# def roman(num):
+#     while (num>=1000):
+#         print("M",end='')
+#         num=num-1000
+#     if (num>=900):
+#         print("CM",end='')
+#         num=num-900
+#     if num>=500:
+#         print("D",end='')
+#         num=num-500
+#     if num>=400:
+#         print("CD",end='')
+#         num=num-400
+#     while num>=100:
+#         print("C",end='')
+#         num=num-100
+#     if num>=90:
+#         print("XC",end='')
+#         num=num-90
+#     if num>=50:
+#         print("L",end='')
+#         num=num-50
+#     if num>=40:
+#         print("XL",end='')
+#         num=num-40
+#     while num>=10:
+#         print("X",end='')
+#         num=num-10
+#     if num>=9:
+#         print("IX",end='')
+#         num=num-9
+#     if num>=5:
+#         print("V",end='')
+#         num=num-5
+#     if num>=4:
+#         print("IV",end='')
+#         num=num-4
+#     while num>=1:
+#         print("I",end='')
+#         num=num-1
+
+# while True:
+#     num=int(input("Enter the number :"))
+#     if num>0:
+#         roman(num)
+#         break
+#     else:
+#         print("invalid input enter valid number again")
+
+
+#9.write a python program which will convert an Roman number into Arbitary number by using function
+# def roman(char):
+    # d={'I':1,'IV':4,'V':5,'IX':9,'X':10,'XL':40,'L':50,'XC':90,'C':100,'CD':400,'D':500,'CM':900,'M':1000}
+    # for i in d:
+    #     print(i)
+
+# m=input("Enter the Roman number:")
+# roman(m)
+
+# m=input("Enter the Roman number:")
+# d={'I':1,'IV':4,'V':5,'IX':9,'X':10,'XL':40,'L':50,'XC':90,'C':100,'CD':400,'D':500,'CM':900,'M':1000}
+# number=0
+# for char in m:
+#     number=number+d[char]
+# print(number)    
+
+
+
+
+#10.write a python program which will accept list of values and find their sum and average by using function
+# approach-1
+# def sumavg(listobj):
+#     l=[]
+#     for i in range(listobj):
+#         y=int(input(f"Enter {i} number"))
+#         l.append(y)
+#     print(l)
+#     sum=0
+#     for k in l:
+#         sum=sum+k
+#         avg=sum/len(l)
+    
+#     print(sum)
+#     print(avg)
+# while True:
+#    list=int(input("Enter How Many Number sum and avg u want to find:"))
+#    if (list>0):
+#     sumavg(list)
+#     break
+#    else:
+#     print("invalid input try again")
+
+
+# approach-2
+# def readval():
+#         l=[]
+#         lst=int(input("Enter How Many Number sum and avg u want to find:"))
+#         if (lst<=0):
+#             return l
+#         else:
+#             for i in range(1,lst+1):
+#                 y=int(input(f"Enter the {i} value:"))
+#                 l.append(y)
+#             return l
+# # l=readval()
+# # print(l)
+
+# def sumavg():
+#     l=readval()
+#     print(l)
+#     sum=0
+#     for i in l:
+#         sum=sum+i
+#     else:
+#         print(sum)
+#         avg=sum/len(l)
+#         print(avg)
+# sumavg()
+
+
+#11.#10.write a python program which will accept list of names from the keyboard and sort them in both ascending and descending orders.
+#approach=1
+# def name():
+#     l=[]
+#     nm=int(input("Enter the number:"))
+#     if (nm<=0):
+#         return l
+#     else:
+#         for i in range(1,nm+1):
+#             y=input("Enter the name:")
+#             l.append(y)
+#         return l
+# # l=name()
+# # print(l)
+# def ascsort(l):
+#     print(l)
+#     l.sort()
+#     print(l)
+# # ascsort()
+# def descsort(l):
+#     print(l)
+#     l.sort(reverse=True)
+#     print(l)
+# # descsort()
+# l=name()
+# print(l)
+# if len(l)==0:
+#     print("List is empty, can't sort Names")
+# else:
+#     while True:
+#         opt=int(input("Do u want to sort names in\n Ascending Order (Press-1)\n Decending Order (Press-2) \n exit (press-3)\n Enter the option:"))
+#         match(opt):
+#             case 1:
+#                 ascsort(l)
+#             case 2:
+#                 descsort(l)
+#             case 3:
+#                 print("Thx for using this Program")
+#                 break
+#             case __:
+#                 print("Ur Selection of Operation is wrong--try again")
+
+
+
+
+#approach=2
+# def name():
+#     l=[]
+#     nm=int(input("Enter the number:"))
+#     if (nm<=0):
+#         return l
+#     else:
+#         for i in range(1,nm+1):
+#             y=input("Enter the name:")
+#             l.append(y)
+#         return l
+# # l=name()
+# # print(l)
+# def ascsort(l):
+#     print(l)
+#     l.sort()
+#     print(l)
+# # ascsort()
+# def descsort(l):
+#     print(l)
+#     l.sort(reverse=True)
+#     print(l)
+# # descsort()
+# l=name()
+# if (len(l)==0):
+#     print("List is empty, can't sort Names")
+# while True:
+#     n=int(input("Enter the number from 1 to 3:"))
+#     if (n==1):
+#         print(f"The original name is {l}")
+#         p=ascsort(l)
+#     elif n==2:
+#         print(f"The original name is {l}")
+#         p=descsort(l)
+#     elif n==3:
+#         print("Thx for using this Program")
+#         break
+#     else:
+#         print("Enter invalid number please enter in between from 1 to 4")
+
+
+				
+
+
+
+
+
+
+  
+
+        
+
+
+
+
+
+
+
+
+
 
     
 
