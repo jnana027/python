@@ -2253,7 +2253,72 @@
 # kwvarlen(2,'EEE',10,20,30,40,50,60,70,name='Biswa',roll=101,crs='Bcom',cls='kdpauto collage',country='USA')
 
 
+# lan="python"
+# def learnml():
+#     crs="ML"
+#     print(f"The language is {lan} and course is {crs}")
 
+# def learndl():
+#     crs="DL"
+#     print(f"The language is {lan} and course is {crs}")
+
+# def learniot():
+#     crs="IOT"
+#     print(f"The language is {lan} and course is {crs}")
+
+# learnml()
+# learndl()
+# learniot()
+
+# a=10
+# b=11
+# def add1():
+#     global a,b
+#     a=a+1
+#     b=b+1
+# def add2():
+#     global a,b
+#     a=a+1
+#     b=b+1
+# print(f"The value of a is {a} and the value of b is {b}")
+# add1()
+# print(f"The value of a is {a} and the value of b is {b}")
+# add2()
+# print(f"The value of a is {a} and the value of b is {b}")
+
+
+# a=10
+# b=20
+# c=30
+# def globa():
+#     a=100
+#     b=200
+#     c=300
+#     res=globals()['a']+globals()['b']+globals()['c']
+#     print(res)
+#     res=a+b+c+globals()['a']+globals()['b']+globals()['c']
+#     print(res)
+# globa()
+
+
+# a=10
+# b=20
+# c=30
+# def globa():
+#     d=globals()
+#     a=100
+#     b=200
+#     c=300
+#     res=d['a']+d['b']+d['c']
+#     print(res)
+#     res=d.get('a')+d.get('b')+d.get('c')
+#     print(res)
+#     res=globals().get('a')+globals().get('b')+globals().get('c')
+#     print(res)
+#     res=a+b+c+globals()['a']+globals()['b']+globals()['c']
+#     print(res)
+
+# globa()
 
 
 
