@@ -2207,6 +2207,55 @@
 # pos1(cnt='Japan',crs='Doctor',name='Baby',roll=7,mark=700)
 
 
+# A=[1,2,3]
+# B=[4,5,6]
+# print(A+B)
+
+# def kwvarlen(**param):
+#     print(param,type(param),len(param))
+#     for k,v in param.items():
+#         print(f"{k} : {v}")
+# kwvarlen(name='jnana',roll=100,crs='B tech',cls='Gandhi')
+
+
+# def kwvarlen(id,branch,**param):
+#     print(param,type(param),len(param))
+#     print(f"Student id is {id} and Branch is {branch}")
+#     for k,v in param.items():
+#         print(f"{k} : {v}")
+# kwvarlen(1,'CSE',name='jnana',roll=100,crs='B tech',cls='Gandhi')
+
+
+# def kwvarlen(id,branch,*para,**param):
+#     print(f"Student id is {id} and Branch is {branch}")
+#     print(param,type(param),len(param))
+#     for k,v in param.items():
+#         print(f"{k} : {v}")
+#     print(para,type(para),len(para))
+#     sum=0
+#     for mark in para:
+#         sum=sum+mark
+#     print(f"The student mark is {sum}")
+# kwvarlen(1,'CSE',10,20,30,40,50,name='jnana',roll=100,crs='B tech',cls='Gandhi')
+
+
+# def kwvarlen(id,branch,*para,country="India",**param):
+#     print(f"Student id is {id} of Branch  {branch} and belongs to {country} country")
+#     print(param,type(param),len(param))
+#     for k,v in param.items():
+#         print(f"{k} : {v}")
+#     print(para,type(para),len(para))
+#     sum=0
+#     for mark in para:
+#         sum=sum+mark
+#     print(f"The student mark is {sum}")
+# kwvarlen(1,'CSE',10,20,30,40,50,name='jnana',roll=100,crs='B tech',cls='Gandhi')
+# kwvarlen(2,'EEE',10,20,30,40,50,60,70,name='Biswa',roll=101,crs='Bcom',cls='kdpauto collage',country='USA')
+
+
+
+
+
 
 				
 
