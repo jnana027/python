@@ -2320,9 +2320,163 @@
 
 # globa()
 
+# k=lambda a,b:a+b
+# while True:
+#     m=int(input("Enter the first number:"))
+#     n=int(input("Enter the second number:"))
+#     if (m>0) and (n>0):
+#         break
+#     else:
+#         print("Enter the value again")
 
+# res=k(m,n)
+# print(res)
 
+#14.Write a python program which will compute all type of arithmetic opertion by using anonymous function using menu driven approach
+# import sys
+# add=lambda a,b:a+b
+# sub=lambda a,b:a-b
+# mul=lambda a,b:a*b
+# div=lambda a,b:a/b
+# flodiv=lambda a,b:a//b
+# moddiv=lambda a,b:a%b
+# exp=lambda a,b:a**b
+
+# def display():
+#     print("\t 1.addition")
+#     print("\t 2.substraction")
+#     print("\t 3.multiplication")
+#     print("\t 4.division")
+#     print("\t 5.floordivion")
+#     print("\t 6.modulosdivision")
+#     print("\t 7.exponation")
+#     print("\t 8.exit")
+# def readinput():
+#             m=int(input("Enter the first number:"))
+#             n=int(input("Enter the second number:"))
+#             return m,n
+
+# while True:
+#     display()
+#     ch=int(input("Enter your choice:"))
+#     match (ch):
+#         case 1:
+#             m,n=readinput()
+#             res=add(m,n)
+#             print(res)
+#         case 2:
+#             m,n=readinput()
+#             res=sub(m,n)
+#             print(res)
+#         case 3:
+#             m,n=readinput()
+#             res=mul(m,n)
+#             print(res)
+#         case 4:
+#             m,n=readinput()
+#             res=div(m,n)
+#             print(res)
+#         case 5:
+#             m,n=readinput()
+#             res=flodiv(m,n)
+#             print(res)
+#         case 6:
+#             m,n=readinput()
+#             res=moddiv(m,n)
+#             print(res)
+#         case 7:
+#             m=int(input("Enter the base:"))
+#             n=int(input("Enter the power:"))
+#             res=exp(m,n)
+#             print(res)
+#         case 8:
+#             print("Thx for Using This Program")
+#             sys.exit()
+#         case __:
+#             print("Ur Selection of Operation is Wrong--try again")
 				
+
+#15.Write a python program which will accept a word and decide wheather it is pallindrome or not by using anonymous function
+# word=lambda w:w==w[::-1]
+# w=input("Enter the word:")
+# wo=w.upper()
+# res=word(wo)
+# if(res):
+#     print(f"{w} is a pallindrome")
+# else:
+#     print(f"{w} is not a pallindrome")
+
+#16.Write a python program which will accept three intiger value and find the biggest and smallest by using anonymous function
+# biggest=lambda a,b,c:a if b<a>=c else b if a<=b>c else c if a<c>=b else "All value are equal"
+# smallest=lambda a,b,c:a if b>a<=c else b if a>=b<c else c if a>c<=b else "All value are equal"
+
+# a=int(input("enter the first number:"))
+# b=int(input("enter the second number:"))
+# c=int(input("enter the third number:"))
+
+# print(f"{a} {b} {c} in between them biggest number is {biggest(a,b,c)}")
+# print(f"{a} {b} {c} in between them smallest number is {smallest(a,b,c)}")
+
+
+#17.Write a python program which will read list of values from the keyboard by using normal function and find the biggest and smallest among them 
+#by using anonymous function
+#1.
+# def li():
+#     while True:
+#         n=int(input("Enter how many list of value you want to enter:"))
+#         if n>=0:
+#             break
+#         else:
+#             print("enter the valid input again")
+#     l=[]
+#     for i in range(1,n+1):
+#             y=int(input(f"enter the {i} list value:"))
+#             l.append(y)
+#     print(l)
+    # print(min(l))
+    # print(max(l))
+    # if min(l)==max(l):
+    #     print("The numbers are equal")
+
+
+    # print(min(l))
+    # print(max(l))
+    # p=set(l)
+    # print(p,len(p))
+    # if len(p)==1:
+    #     print("The numbers are equal")
+
+
+    # l.sort()
+    # print(f"The smallest number is {l[0]}")
+    # print(f"The biggest number is {l[-1]}")
+    # if l[0]==l[-1]:
+    #     print("The numbers are equal")
+# li()
+
+
+#2.
+def li():
+    while True:
+        n=int(input("Enter how many list of value you want to enter:"))
+        if n>=0:
+            break
+        else:
+            print("enter the valid input again")
+    l=[]
+    for i in range(1,n+1):
+            y=int(input(f"enter the {i} list value:"))
+            l.append(y)
+    return l
+res=li()
+print(res[0])
+print(res[-1])
+
+
+
+
+
+
 
 
 
