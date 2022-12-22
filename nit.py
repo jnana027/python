@@ -2456,21 +2456,113 @@
 
 
 #2.
-def li():
-    while True:
-        n=int(input("Enter how many list of value you want to enter:"))
-        if n>=0:
-            break
-        else:
-            print("enter the valid input again")
-    l=[]
-    for i in range(1,n+1):
-            y=int(input(f"enter the {i} list value:"))
-            l.append(y)
-    return l
-res=li()
-print(res[0])
-print(res[-1])
+# def li():
+#     while True:
+#         n=int(input("Enter how many list of value you want to enter:"))
+#         if n>=0:
+#             break
+#         else:
+#             print("enter the valid input again")
+#     l=[]
+#     for i in range(1,n+1):
+#             y=int(input(f"enter the {i} list value:"))
+#             l.append(y)
+#     print(l,type(l))
+#     print(min(l,key=lambda value:int(value)))
+#     print(max(l,key=lambda value:int(value)))
+#     if min(l,key=lambda value:int(value))==max(l,key=lambda value:int(value)):
+#         print('both are equal')
+    # p=tuple(l)
+    # q=lambda *l:min(l)
+    # print(q)
+    # print(p,type(p))
+    # return p  
+# res=li()
+
+
+#18.Write a python program which will a line of text from a keyboard and filter vowels and print their count
+# def word(n):
+#     for x in n.lower():
+#         if x in ['a','e','i','o','u']:
+#             print(x)
+
+# ch=input("Enter the sentences:")
+# word(ch)
+
+
+
+# c=lambda p:p in ['a','e','i','o','u']
+# ch=input("Enter the sentences:")
+# for x in ch:
+#     res=c(x)
+#     print(res)
+
+# ch=input("Enter the sentences:")
+# vr=list(filter(lambda p:p in ['a','e','i','o','u'],ch.lower()))
+# print(vr)
+# print(len(vr))
+
+
+#19.Write a python program which will a line of text from a keyboard and Filter only consonants
+# def con(n):
+#     for x  in n:
+#         if x not in ['a','e','i','o','u'] and x.isalpha():
+#             print(x)
+# m=input("Enter the sentences:")
+# con(m)
+
+
+# co=lambda x:x not in ['a','e','i','o','u'] and x.isalpha()
+# m=input("Enter the sentences:")
+# for x in m:
+#     res=co(x)
+#     if (res):
+#         print(res)
+
+
+# m=input("Enter the sentences:")
+# co=list(filter(lambda x:x not in ['a','e','i','o','u'] and x.isalpha(),m))
+# print(co)
+
+
+#20.Write a python program which will filter the digits from the given line of text
+# m=input("Enter the sentences:")
+# co=list(filter(lambda x:x not in ['a','e','i','o','u'] and not(x.isalpha()),m))
+# print(co)
+
+#21.Write a python program which  will accept list of values and filter even number and odd number separetely
+# m=[10,24,54,53] 
+# eve=list(filter(lambda x:x%2==0,m))
+# print(eve)
+# odd=list(filter(lambda x:x%2!=0,m))
+# print(odd)
+
+
+#22.Write a python program which  will accept list of salaries and give 5% hike and generate new list of salaries
+# x=[100.200,300,400]
+# q=list(map(lambda x:(x*5)/100,x))
+# print(q)
+# p=dict(zip(x,q))
+# print(p)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
