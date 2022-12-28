@@ -2545,7 +2545,100 @@
 # p=dict(zip(x,q))
 # print(p)
 
+#23.Write a python program which will list of values (contains +ve,-ve) find sum of +ve elements and -ve elements.
+# def readvalue():
+#     lst=[]
+#     a=int(input("Enter How Many values u Have:")) 
+#     if (a<0):
+#         return lst
+#     else:
+#         for i in range(1,a+1):
+#             y=int(input(f"Enter the {i} number:")) 
+#             lst.append(y)
+#         return lst
+# res=readvalue()
+# print(res)
+# if(len(res)==0):
+#     print("List is empty and can't find sum of +Ve and _ve Values")
+# else:
+#     r=list(filter(lambda n:n>0,res))
+#     print(r)
+#     sum=0
+#     for i in range(len(r)):
+#         sum=sum+r[i]
+#     print(sum) 
+#     p=list(filter(lambda n:n<0,res))  
+#     print(p) 
+#     sum=0
+#     for i in range(len(p)):
+#         sum=sum+p[i]
+#     print(sum)
 
+
+
+
+
+# import functools
+# def readvalue():
+#     lst=[]
+#     a=int(input("Enter How Many values u Have:")) 
+#     if (a<0):
+#         return lst
+#     else:
+#         for i in range(1,a+1):
+#             y=int(input(f"Enter the {i} number:")) 
+#             lst.append(y)
+#         return lst
+# res=readvalue()
+# print(res)
+# if(len(res)==0):
+#     print("List is empty and can't find sum of +Ve and _ve Values")
+# else:
+#     r=list(filter(lambda n:n>0,res))
+#     print(r)
+#     p=functools.reduce(lambda a,b:a+b,r)
+#     print(p)
+#     r=list(filter(lambda n:n<0,res))
+#     print(r)
+#     p=functools.reduce(lambda a,b:a+b,r)
+#     print(p)
+
+
+#24.Write a python program which will list of employee salaries(contains 0 to 1000) give 5% hike to those employees who are getting salary between 
+# 0 to 500 find their total salary give 10% hike to those employees who salary likes between 501 to 2000 .and find their total salary. 
+# def readdata():
+#     lst=[]
+#     r=int(input("Enter the how much want to required employee salary :"))
+#     print(r)
+#     if (r<=0):
+#         return lst
+#     else:
+#         for i in range(1,r+1):
+#             y=int(input(f"Enter the {i} employee salary:"))
+#             lst.append(y)
+#         return lst
+# res=readdata()
+
+# print(res)
+# r=list(filter(lambda a:(a>=0) and (a<=500),res))
+# print(r)
+# p=list(map(lambda a:a+a*(5/100),r))
+# print(p)
+# print("get salary is {} and hike salary is {}".format(r,p))
+# for i,j in zip(r,p):
+#     print(f"{i}----{j}")
+# r=list(filter(lambda a:(a>=501) and (a<=1000),res))
+# print(r)
+# p=list(map(lambda a:a+a*(10/100),r))
+# print(p)
+# print("get salary is {} and hike salary is {}".format(r,p))
+# for i,j in zip(r,p):
+#     print(f"{i}----{j}")
+
+
+
+l=[int(i) for i in input().split() if (int(i)>=0 and int(i)<=1000)]
+print(l)
 
 
 
